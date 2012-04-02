@@ -1,8 +1,76 @@
-\documentclass[12pt]{article}
+\documentclass[a4 paper, 12pt]{article}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage[pdftex]{graphicx}
 \begin{document}
-\title{A look at the history of the GIMP and its impact on Open Source
-Software}
 \author{Neil McCaffrey}
-\date{}
+\title{A Look At The History Of The Gimp And Its Impact On Open Source
+Software}
+\date{\today}
 \maketitle
+
+%Ok so what I want to say in this report:
+%how the gimp started and what motivated its inseption.
+%show how a comunity got built around this peice of software
+%give some insite as to the development of the gimp during the mid 2000s. What
+%choices were made that influenced the success/failure of the project. What
+%projects have come from the development of the gimp? Is the gimp still the
+%flagship opensource project that it always was?
+
+%Introduce the thing
+	There have been few open source applications that have received as much
+	attetion in the media as the GIMP (GNU Image Manipulation Program). The
+	project has been compared to large comercial software like Adobe Photoshop.
+	It has spawned a large supporting community around it. Although these
+	comparisons have been unfavorable I want to make the argument that the GIMP
+	is more important than just being a free image editor.
+
+	The GIMP started life as a college asignment for students Spencer Kimball
+	and Peter Mattis in 1995. Rather than write a compiler in Scheme/Lisp they
+	decided to write an image manipulation program. They worked on the GIMP for
+	about 10 months before releasing a working program in January of 1996. This
+	initial releas had features such as basic channel operation and a plug-in
+	archetecture which allowed users to extend the functionality of the
+	program.
+
+	However the first release was far from perfect, because of its dependancy
+	on the Motif toolkit for rendering GUI widgits distribution of the GIMP was
+	initially difficult. The use of Motif also made the GIMP prone to crashing.
+	Because of these problems Peter got fed up with the Motif toolkit and
+	started work on the GIMP Tool Kit or GTK for the 0.6x series of the GIMP.
+	%Need to fill in the blank drawn here, too bored right now.
+
+	In June 1997 Peter and Spencer left the project, having graduated and gotten
+	jobs they no longer had time to contribute to the project. This left the
+	project in a state of confusion. Patches were contributed but not merged
+	into the official relase. This lead to unofficial ``pre-releases'' to be
+	made and published. To pick up the slack for this transition period Federico
+	Mena Quintero took the lead of the project and lead it in the direction of
+	stability and useability for the 1.0 release.
+
+	With the founders of the project gone the development of the GIMP split up
+	into teams developing the toolkit and a team developing the application.
+	Where the project was to go next was discussed on #gimp. There was an
+	obvious need for centeralisation of both the code and documentation so Shawn
+	Amundson secured the domain gimp.org. The developers started to manage their
+	code using CVS around this time.
+
+	%Feels like there is a bit of a gap here too. :/
+	Dispite its success in the opensource world comercial users were unsatisfied
+	by the GIMP. This lead to a fork of the 1.0.4 version called CinePaint in
+	1999.\cite{release} CinePaint is an aplication which has very different
+	goals to the GIMP. It has a much higher colour depth in comparison to the
+	GIMP, 32bit vs 8bit per colour channel. With high colour depth and advanced
+	features such as onion skinning CinePaint is an aplication focused on film
+	retouching. It has seen use in many films such as `Spider Man', `Lord of the
+	Rings' and `Harry Potter and the Philosopher's Stone'. It is second
+	
+	\begin{thebibliography}{12}
+\bibitem{earlyHistory}
+	\url{``http://www.gimp.org/about/ancient_history.html''}
+\bibitem{gnomeHistory}
+	\url{``http://primates.ximian.com/~miguel/gnome-history.html''}
+\bibitem{release}
+	\url{``http://www.boards.ie/vbulletin/showthread.php?t=2866''}
+\end{thebibliography}
 \end{document}
