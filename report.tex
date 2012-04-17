@@ -40,6 +40,9 @@ Software}
 	started work on the GIMP Tool Kit or GTK for the 0.6x series of the GIMP.
 	%Need to fill in the blank drawn here, too bored right now.
 
+	Wheather it was intended or not GTK+ became very popular due to the Gnome
+	project. In 
+
 	In June 1997 Peter and Spencer left the project, having graduated and gotten
 	jobs they no longer had time to contribute to the project. This left the
 	project in a state of confusion. Patches were contributed but not merged
@@ -50,10 +53,10 @@ Software}
 
 	With the founders of the project gone the development of the GIMP split up
 	into teams developing the toolkit and a team developing the application.
-	Where the project was to go next was discussed on #gimp. There was an
-	obvious need for centeralisation of both the code and documentation so Shawn
-	Amundson secured the domain gimp.org. The developers started to manage their
-	code using CVS around this time.
+	Where the project was to go next was discussed on  the \#gimp IRC channel.
+	There was an obvious need for centeralisation of both the code and
+	documentation so Shawn Amundson secured the domain gimp.org. The developers
+	started to manage their code using CVS around this time.
 
 	%Feels like there is a bit of a gap here too. :/
 	Dispite its success in the opensource world comercial users were unsatisfied
@@ -81,6 +84,14 @@ Software}
 	functionality directly into the application the developers decided to build
 	an external library to handle these functions. This is the GEneric Graphics
 	Library.(GEGL)
+
+	Development of GEGL has been ongoing since 2000 when it was originally
+	concieved as a replacement to GIMP core. It is modeled after an acyclic
+	graph where each node represents an operation and each edge. A graph may be
+	stored in an XML format and applied to multiple images for batch
+	processing. The main advantage of representing edited images in this maner
+	is non-destructive editing of a file.
+	
 \begin{thebibliography}{12}
 	\bibitem{earlyHistory}
 		\url{``http://www.gimp.org/about/ancient_history.html''}
@@ -88,5 +99,9 @@ Software}
 		\url{``http://primates.ximian.com/~miguel/gnome-history.html''}
 	\bibitem{release}
 		\url{``http://www.gimp.org/about/history.html''}
+	\bibitem{gnome}
+		\url{``http://primates.ximian.com/~miguel/gnome-history.html''}
+	\bibitem{gegl}
+		\url{``http://gegl.org/''}
 \end{thebibliography}
 \end{document}
